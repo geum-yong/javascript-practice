@@ -1,17 +1,39 @@
 <!doctype html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <!-- style -->
+    <!-- styles -->
     <link href="css/reset.css" rel="stylesheet" />
+    <link href="css/index.css" rel="stylesheet" />
+
+    <!-- scripts -->
+    <script src="js/virtualized-list.js" type="module" defer></script>
 
     <title>mui clone practice</title>
-</head>
-<body>
-    <div>test15</div>
-</body>
+  </head>
+  <body>
+    <main class="web-container">
+      <h1 class="main-title">MUI CLONE PRACTICE</h1>
+      <section class="mui-contents">
+        <h2 class="contents-title">1. Virtualized List</h2>
+
+        <div class="contents-description">
+          <div
+            id="virtualizedList"
+            data-width="400"
+            data-height="360"
+            data-item-size="46"
+            data-item-count="200"
+            data-overscan-count="5"
+          ></div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
