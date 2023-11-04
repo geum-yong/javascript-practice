@@ -13,10 +13,12 @@
     <link href="css/index.css" rel="stylesheet" />
     <link href="css/virtualized-list.css" rel="stylesheet" />
     <link href="css/basic-tabs.css" rel="stylesheet" />
+    <link href="css/basic-accordion.css" rel="stylesheet" />
 
     <!-- scripts -->
     <script src="js/virtualized-list.js" type="module" defer></script>
     <script src="js/basic-tabs.js" type="module" defer></script>
+    <script src="js/basic-accordion.js" type="module" defer></script>
 
     <title>mui clone practice</title>
   </head>
@@ -51,6 +53,73 @@
           <div class="basic-tab-contents selected">ITEM ONE</div>
           <div class="basic-tab-contents">ITEM TWO</div>
           <div class="basic-tab-contents">ITEM THREE</div>
+        </div>
+      </section>
+
+      <section class="mui-contents">
+        <h2 class="contents-title">2. Basic Accordion</h2>
+
+        <div class="contents-description">
+          <div id="accordionBox">
+            <div class="basic-accordion">
+              <div>
+                <div class="accordion-title-box">
+                  <p class="accordion-title">Accordion 1</p>
+                  <div>
+                    <span class="accordion-arrow"></span>
+                  </div>
+                </div>
+                <div class="accordion-description-box">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
+                  eget.
+                </div>
+              </div>
+            </div>
+
+            <div class="basic-accordion">
+              <div>
+                <div class="accordion-title-box">
+                  <p class="accordion-title">Accordion 2</p>
+                  <div>
+                    <span class="accordion-arrow"></span>
+                  </div>
+                </div>
+                <div class="accordion-description-box">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
+                  eget.
+                </div>
+              </div>
+            </div>
+
+            <div class="basic-accordion">
+              <div>
+                <div class="accordion-title-box">
+                  <p class="accordion-title">Accordion 3</p>
+                  <div>
+                    <span class="accordion-arrow"></span>
+                  </div>
+                </div>
+                <div class="accordion-description-box">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
+                  eget.
+                </div>
+              </div>
+            </div>
+
+            <div class="basic-accordion">
+              <div>
+                <div class="accordion-title-box disabled">
+                  <p class="accordion-title">Disabled Accordion</p>
+                  <div>
+                    <span class="accordion-arrow"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
