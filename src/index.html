@@ -12,9 +12,11 @@
     <link href="css/reset.css" rel="stylesheet" />
     <link href="css/index.css" rel="stylesheet" />
     <link href="css/virtualized-list.css" rel="stylesheet" />
+    <link href="css/basic-tabs.css" rel="stylesheet" />
 
     <!-- scripts -->
     <script src="js/virtualized-list.js" type="module" defer></script>
+    <script src="js/basic-tabs.js" type="module" defer></script>
 
     <title>mui clone practice</title>
   </head>
@@ -41,7 +43,14 @@
         <h2 class="contents-title">2. Basic Tab</h2>
 
         <div class="contents-description">
-          <div id="basicTab"></div>
+          <div id="basicTabsBox">
+            <div class="basic-tab selected">ITEM ONE</div>
+            <div class="basic-tab">ITEM TWO</div>
+            <div class="basic-tab">ITEM THREE</div>
+          </div>
+          <div class="basic-tab-contents selected">ITEM ONE</div>
+          <div class="basic-tab-contents">ITEM TWO</div>
+          <div class="basic-tab-contents">ITEM THREE</div>
         </div>
       </section>
     </main>

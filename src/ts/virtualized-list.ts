@@ -46,8 +46,6 @@ const setListData = () => {
   }
 };
 
-window.onload = () => {
-  listContainer.addEventListener("scroll", setListData);
-  setInitContainerSize();
-  setListData();
-};
+listContainer.addEventListener("scroll", setListData);
+setInitContainerSize();
+setListData();
