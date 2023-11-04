@@ -1,0 +1,27 @@
+.web-container {
+  padding: 30px;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.main-title {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.mui-contents {
+  margin-top: 40px;
+}
+
+.mui-contents .contents-title {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.mui-contents .contents-description {
+  margin-top: 20px;
+  padding: 30px;
+  border: 1px solid #333;
+  border-radius: 8px;
+  background-color: #f3f6f9;
+}
