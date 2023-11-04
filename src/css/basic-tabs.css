@@ -1,0 +1,36 @@
+#basicTabsBox {
+  position: relative;
+  display: flex;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  background-color: #fff;
+}
+
+#basicTabsBox .basic-tab {
+  padding: 12px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+#basicTabsBox .basic-tab.selected {
+  color: #1976d2;
+}
+
+#basicTabsBox .bottom-bar {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  background-color: #1976d2;
+  transition: transform 0.5s;
+}
+
+.basic-tab-contents {
+  display: none;
+  padding: 24px;
+  background-color: #fff;
+}
+
+.basic-tab-contents.selected {
+  display: block;
+}
