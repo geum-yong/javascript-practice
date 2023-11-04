@@ -1,0 +1,89 @@
+.basic-accordion {
+  background-color: #fff;
+  box-shadow:
+    0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  height: 40px;
+  transition: all 1s;
+  overflow: hidden;
+}
+
+.basic-accordion:first-child {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.basic-accordion:last-child {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.basic-accordion .accordion-title-box {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  transition: all 1s;
+  cursor: pointer;
+}
+
+.basic-accordion .accordion-title-box.disabled {
+  background-color: rgba(0, 0, 0, 0.12);
+  cursor: default;
+}
+
+.basic-accordion .accordion-title-box.disabled .accordion-title {
+  color: #ccc;
+}
+
+.basic-accordion .accordion-title-box .accordion-arrow {
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  transition: all 1s;
+}
+
+.basic-accordion .accordion-title-box.disabled .accordion-arrow {
+  border-color: #ccc;
+}
+
+.basic-accordion .accordion-title-box.disabled::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.12);
+}
+
+.basic-accordion .accordion-description-box {
+  padding: 8px 16px 16px;
+}
+
+.basic-accordion.open {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.basic-accordion.open:first-child {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.basic-accordion.open:last-child {
+  margin-top: 16px;
+  margin-bottom: 0;
+}
+
+.basic-accordion.open .accordion-title-box {
+  padding: 20px 16px;
+}
+
+.basic-accordion.open .accordion-title-box .accordion-arrow {
+  transform: rotate(-135deg);
+}
